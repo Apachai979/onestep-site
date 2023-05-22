@@ -16,7 +16,7 @@ li.menu-logo {
   background: darksalmon url(https://storge.pic2.me/c/1360x800/666/59ee4def70e13.jpg) no-repeat center center;
   height: 500px;
   background-size: cover;
-  /*растягивает на 100% ширины блока*/
+  /*растягивает на 100% ширины бока*/
   background-attachment: fixed;
   /* фиксирует картинку*/
 }
