@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body {
+  background-color: #fcfbf8;
+  color: #133531;
+}
+
+li.menu-logo {
+  background-image: url(https://storge.pic2.me/c/1360x800/666/59ee4def70e13.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#first {
+  background: darksalmon url(https://storge.pic2.me/c/1360x800/666/59ee4def70e13.jpg) no-repeat center center;
+  height: 500px;
+  background-size: cover;
+  /*растягивает на 100% ширины блока*/
+  background-attachment: fixed;
+  /* фиксирует картинку*/
+}
+
+#second {
+  height: 500px;
+}
+
+.main-text {
+  color: #000;
+  text-align: justify;
+  /*где располагается текст, justify - растягивает на всю ширину*/
+  font-size: 25px;
+  /* по умолчанию 14, 1.2em - умножает на 1.2 */
+  font-style: normal;
+  /* italic делает тест под наклоном*/
+  font-weight: bold;
+  /*сделать жирным весь текст,bolder - самый жирный текст*/
+  font-family: 'Bungee Spice', cursive;
+  text-transform: lowercase;
+  /* весь текст в нижнем регистре*/
+  word-spacing: 30px;
+  /* пространоство между словами*/
+  letter-spacing: 5px;
+  /* пространство между символами*/
+  line-height: 50px;
+  /*расстояние между строками*/
+
+}
+
+#text-in-p {
+  color: blueviolet;
+}
+
+div b,
+div i {
+  color: green;
+}
+
+div,
+.name-class,
+#id22 {
+  color: chocolate;
+}
+
+#some_id::after {
+  /* Добавляет контент после блока*/
+  content: '123';
+  color: red;
+  text-decoration: line-through;
+}
+
+#some_id::before {
+  /* */
+  content: '987';
+}
+
+.moment-push:active {
+  text-decoration: dotted;
+}
+
+input:required {
+  color: rebeccapurple;
+}
+
+input {
+  color: blue;
+}
+
+input:focus {
+  color: red;
+}
+
+p.text:empty {
+  background-color: chocolate;
+}
+
+p.text2:not(:empty) {
+  /* применяются стили к не пустому "p" с классом text2*/
+  color: brown;
+}
+
+p.text:empty::after {
+  /* применяются стили к не пустому "p" с классом text2*/
+  content: attr(title);
+}
+
+p.main-link::first-letter {
+  color: chartreuse;
+}
+
+p.main-link2::first-line {
+  color: chartreuse;
+}
+
+a.main-menu-link {
+  color: #133531;
+  text-decoration: none;
+}
+
+a.main-menu-link:hover {
+  color: #15c8b4;
+  text-decoration: none;
+  cursor: pointer;
+}
