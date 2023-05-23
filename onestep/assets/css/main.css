@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #fcfbf8;
+  --text-color: #133531;
+  --accent-color: #15C8B4;
+  --contract-color: #11B19F;
+  --contrast-txt-color: #bebeb4;
+  ;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*========================================== General rules ======================================*/
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main.main {
+  flex: 1 1 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*========================================== General rules ======================================*/
+
+/*========================================== Header rules ======================================*/
+header {
+  height: 80px;
+}
+
+.qv-logo {
+  width: 105px;
+}
+
+ul.nav-centre-md li:not(:last-of-type) {
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+ul.nav-centre-lg li:not(:last-of-type) {
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+ul.nav-centre-xl li:not(:last-of-type) {
+  padding-right: 25px;
+}
+
+ul li {
+  white-space: nowrap;
+}
+
+.nav-right-up {
+  font-size: 12px;
+  line-height: 0.5;
+  font-weight: bold;
+  color: rgb(141, 141, 141);
+  text-align: right;
+}
+
+.nav-right {
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: left
+}
+
+a.qv-catalog {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 10px 20px;
+  width: 96px;
+  height: 40px;
+  border-radius: 20px 20px;
+  text-decoration: none;
+}
+
+a.qv-catalog:hover {
+  background-color: var(--contract-color);
+  cursor: pointer;
+}
+
+
+
+/*========================================== Header rules ======================================*/
