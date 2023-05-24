@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block2 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 20px;
+}
+
+.block {
+  background: red;
+  height: 200px;
+  width: 50%;
+  border: 5px solid silver; /*dashed - прерывистая обводка, dotted - точечная*/
+  border-bottom: 0; /*снизу не будет линии*/
+  border-top-style: dashed;
+
+  border-radius: 20px 50px 1px;
+  opacity: 0.5; /*прозрачность от 0 до 1*/
+  margin: 20px 50px;
+  padding: 20px 50px;
+
+  float: left;
+  /*display: inline; /* Объекты в одну строку, будет строчным!*/
+  display: block; /* Объекты будут считаться блоком*/
+
+}
+
+#first {
+  float: right; /*Позиционирование блока*/
+}
+
+#second {
+  float: left;
+  background: blue;
+}
+
+.some-block {
+  background: red;
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  position: absolute; /*Поверх прочих блоков в точной координате страницы*/
+  top: 50px;
+  left: 50px;
+  /* position: fixed;  /* Зафиксировать, всегда будет виден*/
+}
+
+.nav{
+  list-style: none;
+  display: block;
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+.nav li {
+  display: inline;
+}
+aside {
+  width: 20%;
+  padding: 20px 2.5%;
+  background: #fafafa;
+  border: 2px solid black;
+  float: left;
+  margin-left: 5%;
+  position: relative; /*Позиционирование объекта, через top , bottom ... позволяет двигать объект */
+  top: -10px;
+  left: -150px;
+  z-index: 0;
+
+}
+
+main {
+  width: 50%;
+  margin-left: 10%;
+  background: #fafafa;
+  border: 2px solid black;
+  padding: 20px 2.5%;
+  float: left;
+  position: relative;
+  z-index: 1; /* приоритет в отоброжание, вместе с position используется*/
+}
+
+header, footer{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  border-bottom: 3px solid silver;
+  background: #ccc;
+  line-height: 70px; /* такое же значение как в параметре height и текст будет строго по центру*/
+  margin-bottom: 30px;
+  float: left;
+}
+footer {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  border-bottom: 0px;
+  border-top: 2px solid black;
+  float: left;
+}
