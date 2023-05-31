@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>OneStep</title>
   <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-  <header>
-    <ul type="None">
-      <li><div class="menu-logo"></div>'</li>
-      <li><a href="#" class="main-menu-link">Логотип</a></li>
-      <li>Каталог</li>
-      <li>Партнерам</li>
-      <li>О компании</li>
-      <li>Производство</li>
-      <li>Документы</li>
-      <li>Академия</li>
-      <li>Контакты</li>
-    </ul>
-  </header>
-  
+  <div class="container mx-auto px4">
+    <div class="flex">
+      <div class="flex-none w-14 h-14">
+        01
+      </div>
+      <div class="flex-initial w-64 ...">
+        02
+      </div>
+      <div class="flex-initial w-32 ...">
+        03
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mx-auto px4">
+    <div class="h-2 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+    <header class="flex text-sm py-8 border-b-2 border-blue-100 mb-8">
+      <!--items-center выравнивание по вертикали-->
+      <a href="#" class="flex flex-1 whitespace-nowrap w-1/12 justify-center">LOGO</a>
+      <ul class="flex flex-1 w-9/12 justify-center" type="None">
+        <li class="mx-3">Каталог</li>
+        <li class="mx-3">Партнерам</li>
+        <li class="mx-3 whitespace-nowrap">О компании</li>
+        <li class="mx-3">Производство</li>
+      </ul>
+      <div class="flex flex-1 w-2/12 justify-end">+79528888888</div>
+    </header>
+    <div class="h-2 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+  </div>
   <div id="first"></div>
   <div id="second"></div>
 
   <input type="Name" placeholder="Введите имя" required>
   <br>
-  <p class="main-text">Katuha, look at this text, i've connected FONT Style to my site!!   </p><br>
+  <p class="main-text">Katuha, look at this text, i've connected FONT Style to my site!! </p><br>
   <p class="text" title="some text in title"></p>
   <p class="text2">Simple</p><br>
-  <p class="main-link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ratione, sequi quasi ab provident saepe labore sint ad obcaecati at repellat pariatur blanditiis quia expedita ex iusto nobis fugit?</p>
-  <p class="main-link2">Lorem ipsum <br> sit amet consectetur adipisicing elit. Voluptates explicabo ratione, sequi quasi ab provident saepe labore sint ad obcaecati at repellat pariatur blanditiis quia expedita ex iusto nobis fugit?</p>
+  <p class="main-link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ratione, sequi
+    quasi ab provident saepe labore sint ad obcaecati at repellat pariatur blanditiis quia expedita ex iusto nobis
+    fugit?</p>
+  <p class="main-link2">Lorem ipsum <br> sit amet consectetur adipisicing elit. Voluptates explicabo ratione, sequi
+    quasi ab provident saepe labore sint ad obcaecati at repellat pariatur blanditiis quia expedita ex iusto nobis
+    fugit?</p>
 
   <div id="some_id">Some text</div>
 
   <a href="#" class="main-link">>>Ссылка</a>
 
-  <p class="main-text"><b>Далеко-далеко</b>, за словесными горами в стране гласных и согласных живут рыбные тексты. <b id="text-in-p"> Страну курсивных</b>, над они толку моей рукописи там использовало, она наш вершину возвращайся несколько родного! Маленькая путь пустился, они, своих выйти заголовок подзаголовок рукопись ему рукописи осталось снова</p>
+  <p class="main-text"><b>Далеко-далеко</b>, за словесными горами в стране гласных и согласных живут рыбные тексты. <b
+      id="text-in-p"> Страну курсивных</b>, над они толку моей рукописи там использовало, она наш вершину возвращайся
+    несколько родного! Маленькая путь пустился, они, своих выйти заголовок подзаголовок рукопись ему рукописи осталось
+    снова</p>
   <div> грамматики <i> языком</i> которой то реторический свой запятых пор!</div>
 
   <div>
     <p>
-      Далеко-далеко за <b>словесными</b> горами в стране гласных и согласных, живут рыбные тексты. Океана пустился речью рукопись его живет что жизни рыбного жаренные.
+      Далеко-далеко за <b>словесными</b> горами в стране гласных и согласных, живут рыбные тексты. Океана пустился речью
+      рукопись его живет что жизни рыбного жаренные.
     </p>
   </div>
 
 
 </body>
+
 </html>
